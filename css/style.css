@@ -65,7 +65,7 @@
 }
 
 .portfolio {
-  background: url(/assets/images/backgroung.png) no-repeat;
+  background: url(../assets/images/backgroung.png) no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100%;
