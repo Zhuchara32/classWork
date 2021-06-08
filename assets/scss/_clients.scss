@@ -1,0 +1,25 @@
+.clients {
+    height: 100%;
+    width: 100%;
+    background: #f1f8ff;    
+    text-align: center;
+
+    &-heading {
+        padding-top: 90px;
+        font-size: 50px;
+        font-family: 'Lato', light;
+        text-transform: capitalize;
+        color: #3695ff;
+    }
+
+    &-content {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        &-element {
+            margin: 70px auto;
+        }
+    }
+}

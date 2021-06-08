@@ -1,0 +1,27 @@
+.aboutMe {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+        width: 50%;
+        height: 25vh;
+        text-align: center;
+    }
+
+    &-heading {
+        font-size: 50px;
+        font-family: 'Lato', light;
+        text-transform: capitalize;
+        color: #3695ff;
+        margin-bottom: 4vh;
+    }
+
+    &-text {
+        font-size: 16px;
+        font-family: 'Lato', regular;
+        line-height: 2;
+    }
+}
