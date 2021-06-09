@@ -22,8 +22,12 @@
 }
 
 .cookies-text {
+  height: 30px;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-family: "Lato", regular;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -34,7 +38,7 @@
   width: 115px;
   height: 30px;
   font-family: "Lato", bold;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -76,9 +80,9 @@
   height: 100%;
   width: 100%;
   display: flex;
-  align-content: center;
-  justify-content: center;
-  padding-top: 85px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8vh;
 }
 
 .portfolio-header__wrapper {
@@ -97,6 +101,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio-header-nav {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .portfolio-header__burger {
@@ -120,6 +130,7 @@
   width: 45%;
   font-size: 50px;
   font-family: "Lato", Black;
+  font-weight: 900;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -131,8 +142,16 @@
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 2;
   font-family: "Lato", light;
+  font-weight: 300;
   text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .portfolio-content__text {
+    font-size: 12px;
+  }
 }
 
 .portfolio-conteiner-button {
@@ -149,7 +168,7 @@
   width: 200px;
   height: 60px;
   font-family: "Lato", bold;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -213,10 +232,14 @@
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
   .portfolio-content__heading {
+    width: 70%;
     font-size: 30px;
   }
   .portfolio-content__text {
-    font-size: 13px;
+    width: 70%;
+  }
+  .portfolio-header-nav {
+    width: 70%;
   }
   .portfolio-header__burger {
     background: #3681fe;
@@ -230,10 +253,352 @@
   }
   .portfolio-content__text {
     width: 70%;
-    font-size: 12px;
+  }
+  .portfolio-header-nav {
+    width: 70%;
   }
   .portfolio-header__burger {
     background: #3681fe;
   }
 }
+
+.aboutMe {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe-wrapper {
+  margin: 11vh 0;
+  width: 55%;
+  height: 80%;
+  text-align: center;
+}
+
+.aboutMe-heading {
+  font-size: 50px;
+  font-family: "Lato", light;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #3695ff;
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 1023px) {
+  .aboutMe-heading {
+    font-size: 35px;
+  }
+}
+
+.aboutMe-text {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "Lato", regular;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1023px) {
+  .aboutMe-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .aboutMe-wrapper {
+    width: 70%;
+  }
+}
+
+.expertIn {
+  width: 100%;
+  height: 100%;
+  background: #f1f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expertIn-heading {
+  font-size: 50px;
+  font-family: "Lato", light;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #3695ff;
+  display: block;
+  text-align: center;
+  padding: 90px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .expertIn-heading {
+    font-size: 35px;
+  }
+}
+
+.expertIn-products {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.expertIn-products-service {
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.expertIn-moblieApp-wrapper {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #c2cad3;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.expertIn-moblieApp-icon {
+  background: url(../assets/images/css_sprites.png);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.expertIn-moblieApp-icon.icon-moblie {
+  width: 45px;
+  height: 66px;
+  background-position: -200px -96px;
+}
+
+.expertIn-moblieApp-icon.icon-web {
+  width: 72px;
+  height: 58px;
+  background-position: -108px -10px;
+}
+
+.expertIn-moblieApp-icon.icon-development {
+  width: 58px;
+  height: 66px;
+  background-position: -200px -10px;
+}
+
+.expertIn-moblieApp-icon.icon-product {
+  width: 71px;
+  height: 67px;
+  background-position: -10px -95px;
+}
+
+.expertIn-moblieApp-icon.icon-uxUi {
+  width: 63px;
+  height: 63px;
+  background-position: -108px -88px;
+}
+
+.expertIn-moblieApp-icon.icon-animations {
+  width: 78px;
+  height: 65px;
+  background-position: -10px -10px;
+}
+
+.expertIn-moblieApp-heading {
+  font-size: 24px;
+  font-family: "Lato", bold;
+  font-weight: 700;
+  color: #3677fd;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.expertIn-moblieApp-content-text {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "Lato", regular;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .expertIn-moblieApp-content-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .expertIn-products {
+    width: 70%;
+  }
+  .expertIn-products-service {
+    min-width: 200px;
+  }
+}
+
+.latestWorks {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.latestWorks-heading {
+  font-size: 50px;
+  font-family: "Lato", light;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #3695ff;
+  margin: 90px auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .latestWorks-heading {
+    font-size: 35px;
+  }
+}
+
+.latestWorks-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+.latestWorks-content-work {
+  padding-bottom: 5%;
+}
+
+.clients {
+  height: 100%;
+  width: 100%;
+  background: #f1f8ff;
+  text-align: center;
+}
+
+.clients-heading {
+  padding-top: 90px;
+  font-size: 50px;
+  font-family: "Lato", light;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #3695ff;
+}
+
+@media screen and (max-width: 1023px) {
+  .clients-heading {
+    font-size: 35px;
+  }
+}
+
+.clients-content {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-content-element {
+  margin: 70px auto;
+}
+
+@media screen and (max-width: 1529px) {
+  .clients-content {
+    flex-direction: column;
+  }
+}
+
+.foo {
+  width: 100%;
+  height: 15vh;
+  background: url(../assets/images/backgroundFuter.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.foo-wrapper {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.foo-container-text {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.foo-text {
+  font-size: 45px;
+  font-family: "Lato", light;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.foo-text-bold {
+  font-family: "Lato", bold;
+  font-weight: 700;
+}
+
+.foo-button {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #3695ff;
+  width: 200px;
+  height: 60px;
+  font-family: "Lato", bold;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1529px) {
+  .foo-text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .foo-text {
+    font-size: 35px;
+  }
+  .foo-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .foo-text {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .foo-button {
+    width: 115px;
+    height: 30px;
+    font-family: "Lato", bold;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  .foo-text {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
+

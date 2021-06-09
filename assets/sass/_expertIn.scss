@@ -1,0 +1,111 @@
+.expertIn {
+    width: 100%;
+    height: 100%;
+    background: $bg-expert;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-heading {
+        @include heading ();
+        display: block;
+        text-align: center;
+        padding: 90px 0;
+    }
+
+    &-products {
+        height: 100%;
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+
+        &-service {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            margin: 30px auto;
+        }
+    }
+
+    &-moblieApp-wrapper {
+        width: 140px;
+        height: 140px;
+        border: 1px solid $cc-expert;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &-moblieApp-icon {
+        background: url(../assets/images/css_sprites.png);
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &.icon-moblie { 
+        width: 45px;
+        height: 66px;
+        background-position: -200px -96px;
+        }
+
+        &.icon-web {
+            width: 72px;
+            height: 58px;
+            background-position: -108px -10px;;
+        }
+
+        &.icon-development {
+            width: 58px;
+            height: 66px;
+            background-position: -200px -10px;
+        }
+
+        &.icon-product {
+            width: 71px;
+            height: 67px;
+            background-position: -10px -95px;
+        }
+
+        &.icon-uxUi {
+            width: 63px;
+            height: 63px;
+            background-position: -108px -88px;
+        }
+
+        &.icon-animations {
+            width: 78px;
+            height: 65px;
+            background-position: -10px -10px;
+        }
+    }
+
+    &-moblieApp-heading {
+        font-size: 24px;
+        font-family: $f-Lb;
+        font-weight: 700;
+        color: #3677fd;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &-moblieApp-content-text {
+        @include text ();
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .expertIn-products {
+        width: 70%;
+
+        &-service {
+            min-width: 200px;
+        }
+    }
+}

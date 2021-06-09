@@ -12,8 +12,31 @@
     width: $wb;
     height: $hb;
     font-family: $f-Lb;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 30px;
     border: none;
     cursor: pointer;
+}
+
+@mixin heading {
+    font-size: 50px;
+    font-family: $f-Ll;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #3695ff;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 35px;
+    }
+}
+
+@mixin text ($ff: $f-Lr, $fw: 400){
+    font-size: 16px;
+    line-height: 2;
+    font-family: $ff;
+    font-weight: $fw;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 12px;
+    }
 }
