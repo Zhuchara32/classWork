@@ -15,8 +15,12 @@
     }
 
     &-text {
+        height: $hb-c;
+        display: flex;
+        align-items: center;
         font-size: 14px;
         font-family: $f-Lr;
+        font-weight: 400;
         color: $ct-p;
     }    
     &-button {

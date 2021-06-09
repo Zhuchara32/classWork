@@ -1,0 +1,24 @@
+.latestWorks {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+        &-heading {
+        @include heading ();
+        margin: 90px auto;
+        }
+
+        &-content {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding-bottom: 5%;
+
+            &-work {
+                padding-bottom: 5%;
+            }
+        }
+}

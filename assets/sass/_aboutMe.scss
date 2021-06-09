@@ -1,0 +1,29 @@
+.aboutMe {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+        margin: 11vh 0;
+        width: 55%;
+        height: 80%;
+        text-align: center;
+    }
+
+    &-heading {
+        @include heading ();
+        margin-bottom: 5vh;
+    }
+
+    &-text {
+        @include text ();
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .aboutMe-wrapper {
+        width: 70%;
+    }
+}
