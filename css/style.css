@@ -363,7 +363,7 @@
 }
 
 .expertIn-moblieApp-icon {
-  background: url(/assets/images/css_sprites.png);
+  background: url(../assets/images/css_sprites.png);
   margin: auto;
   position: absolute;
   top: 0;
@@ -518,7 +518,7 @@
 .foo {
   width: 100%;
   height: 15vh;
-  background: url(/assets/images/backgroundFuter.png) no-repeat;
+  background: url(../assets/images/backgroundFuter.png) no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
